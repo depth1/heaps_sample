@@ -1,0 +1,6 @@
+-lib heaps
+-lib hldx
+-main Main
+-dce full
+-D windowSize=960x540
+-hl test.hl
