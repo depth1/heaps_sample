@@ -46,15 +46,11 @@ class Curve2D {
 
 		// add vertex relying at previous
 		g.beginTileFill();
-
-		// First triangle
-		g.addVertex(pp[0].x, pp[0].y, 1, 1, 1, 1, u0, 0.);
-		g.addVertex(pp[1].x, pp[1].y, 1, 1, 1, 1, u0, 1.);
-		g.addVertex(p[1].x, p[1].y, 1, 1, 1, 1, u1, 1.);
-		// Second triangle
-		g.addVertex(p[1].x, p[1].y, 1, 1, 1, 1, u1, 1.);
-		g.addVertex(p[0].x, p[0].y, 1, 1, 1, 1, u1, 0.);
-		g.addVertex(pp[0].x, pp[0].y, 1, 1, 1, 1, u0, 0.);
+	
+		g.addVertex(pp[0].x, pp[0].y, 1,1,1,1,u0,0); // 1st Triangle
+		g.addVertex(pp[1].x, pp[1].y, 1,1,1,1,u0,1);
+		g.addVertex(p[1].x, p[1].y, 1,1,1,1,u1,1); // End of 1st / Begin of 2nd
+		g.addVertex(p[0].x, p[0].y, 1,1,1,1,u1,0);
 
 		g.endFill();
 
